@@ -16,6 +16,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+Icon.loadFont();
+
 const App = () => {
   return (
     <>
@@ -32,6 +35,7 @@ const App = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+              <Icon name="settings" size={30} />
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
